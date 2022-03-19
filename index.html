@@ -1,0 +1,211 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Weather APP</title>
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="logo">
+        Weather
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item mx-2">
+            <a class="nav-link " href="#">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link " href="#">News</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link " href="#">Live cameras</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link " href="#">photo</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link " href="#">contact</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- weather content -->
+  <section id="body-weather" class=" py-5 text-center">
+
+    <!-- search -->
+    <div class="search w-75 mx-auto py-5 ">
+      <input id="btn-search" class="form-control rounded-pill" type="search" placeholder="Find your Location">
+    </div>
+    <!-- end search -->
+
+
+    <div class="container">
+
+      <div class="row gx-0">
+
+
+        <!-- Current Weather -->
+        <div class="col-md-4">
+          <div class="weather-container bg-black rounded-3 shadow-lg h-100">
+
+            <div class="week-days d-flex justify-content-between p-1">
+              <p id="days"></p>
+              <div class="d-flex">
+                <span id="date" class="text-white"> </span>
+                <p id="month"></p>
+               </div>
+            </div>
+
+            <div class="weather-body p-3 text-start">
+
+              <div class="current-location">
+                <p id="location-current">cairo</p>
+              </div>
+
+              <div id="current" class="d-flex justify-content-evenly">
+
+                <div>
+                  <p id="temp-current"></p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <img id="icon-current" src="" alt="">
+                </div>
+              </div>
+
+              <p id="climate-current"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Forecast weather1 -->
+        <div class="col-md-4">
+          <div class="weather-container bg-black rounded-3 shadow-lg h-100">
+
+            <div class="week-days py-1">
+              <p id="days-forecast1"></p>
+
+            </div>
+
+            <div class="weather-body text-center py-1">
+              <div id="forecast-one" class="py-4">
+
+                <div class="text-center py-2">
+                  <img id="icon-forecast-one" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+                </div>
+
+                <div class="text-center py-2">
+                  <p id="temp-forecast-one"><sup>o</sup>c</p>
+                </div>
+
+              </div>
+
+              <p id="climate-forecast-one" class="py-1"></p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Forecast weather2 -->
+        <div class="col-md-4">
+          <div class="weather-container bg-black rounded-3 shadow-lg h-100">
+
+            <div class="week-days py-1">
+              <p id="days-forecast-two"></p>
+
+            </div>
+
+            <div class="weather-body text-center py-1">
+              <div id="forecast-two" class="py-4">
+
+                <div class="text-center py-2">
+                  <img id="icon-forecast-two" src="" alt="">
+                </div>
+
+                <div class="text-center py-2">
+                  <p id="temp-forecast-two"><sup>o</sup>c</p>
+                </div>
+
+              </div>
+
+              <p id="climate-forecast-two" class="py-1"></p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- end weather content -->
+
+
+  <!-- footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div id="footer-content" class="py-5">
+          <div class="subscribe ">
+            <input class="form-control rounded-pill" type="search" placeholder="Enter your email to subscribe">
+          </div>
+          <p class="mt-3 text-muted">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="icons-footer py-5 d-flex justify-content-center">
+          <div class="style-icon d-flex justify-content-center align-items-lg-center mx-1">
+            <i class="fab fa-facebook-f fa-lg"></i>
+          </div>
+
+          <div class="style-icon d-flex justify-content-center align-items-lg-center">
+            <i class="fab fa-twitter fa-lg"></i>
+          </div>
+
+          <div class="style-icon d-flex justify-content-center align-items-lg-center mx-1">
+            <i class="fab fa-google-plus fa-lg"></i>
+          </div>
+
+          <div class="style-icon d-flex justify-content-center align-items-lg-center">
+            <i class="fab fa-pinterest fa-lg"></i>
+          </div>
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+ 
+
+
+
+  
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

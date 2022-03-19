@@ -1,0 +1,99 @@
+body{
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* navbar */
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #09c;
+}
+.bg-light{
+    background-color: #000 !important;
+}
+.navbar{
+    padding: 1rem;
+}
+.custom li a{
+   border: 2px solid transparent;
+   padding: 10px 25px !important;
+   border-radius: 30px;
+   transition: border-color .3s ;
+}
+.custom li:hover a{
+    border-color: #09c;
+}
+/* </navbar> */
+
+
+/* weather */
+
+.weather-container #temp-current{
+    font-size: 90px;
+    
+}
+.weather-container p{
+    color: #fff;
+}
+/* week days */
+.week-days
+{
+    background-color: #1e202b;
+}
+/* forecast1 */
+#forecast-one{
+    font-size: 1.2rem;
+}
+
+
+/* forecast2 */
+#forecast-two{
+    font-size: 1.2rem;
+}
+
+
+
+#body-weather
+{
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* footer */
+#footer{
+    background-color: #1e202b;
+}
+
+
+/* style icons */
+.style-icon{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    color: #09c;
+    transition: all .5s;
+}
+
+
+/* subscribe style */
+.form-control:focus{
+    background-color: #1e202b;
+    color: #fff;
+}
+.form-control{
+    background-color: #1e202b;
+    color: #fff;
+}
+
+.style-icon:hover{
+    background-color: #09c;
+    color: #fff;
+}
+
